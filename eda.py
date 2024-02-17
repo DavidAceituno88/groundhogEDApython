@@ -18,7 +18,7 @@ df1 = pd.read_csv('Documents/groundhog predictions dataset/groundhogs.csv')
 
 
 # In[7]:
-
+pivot_table = pd.pivot_table(df1,index = 'name',aggfunc=np.count, values = 'shadow')
 
 df2= pd.read_csv('Documents/groundhog predictions dataset/predictions.csv')
 
